@@ -145,3 +145,15 @@ body {
 #learn-more:hover {
 text-decoration: underline;
 }
+
+/* resume */
+#resume {
+width: 100%;
+height: auto;
+
+}
+
+#resume .card {
+    margin-left: auto ;
+    margin-right: auto;
+}
