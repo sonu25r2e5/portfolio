@@ -15,7 +15,7 @@ body {
 /* header decide garxau yeha  */
 
 .navbar-brand {
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
@@ -71,7 +71,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 100%;
 }
 
