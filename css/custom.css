@@ -150,10 +150,15 @@ text-decoration: underline;
 #resume {
 width: 100%;
 height: auto;
+padding: 2rem 0;
 
 }
 
 #resume .card {
     margin-left: auto ;
     margin-right: auto;
+}
+
+#resume .card img {
+    height: 150px;
 }
