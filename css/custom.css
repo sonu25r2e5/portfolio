@@ -2,14 +2,14 @@
 /* import from google okay buddy*/
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
-/* common css */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 html,
 body {
     /* // normals css  */
     margin: 0;
     padding: 0;
-    font-family: 'Bitcount Single', serif;
+    font-family: 'Fjalla One', serif;
 }
 
 /* header decide garxau yeha  */
@@ -209,3 +209,96 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+#contact {
+
+    width: 100%;
+    height: auto;
+    padding: 9rem 0;
+}
+
+#contact form {
+    margin: 1rem;
+    width: 100%;
+}
+
+#contact form input, 
+#contact form textarea{
+    background: #e8edfc;
+
+}
+
+
+#contact .submit-message {
+    /* margin: 1rem; */
+    background-color: #ca0a4d;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #e8edfc;
+    color: #bf0202;
+    text-align: center;
+}
+
+
+footer .back-to-top {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .back-to-top:hover {
+    text-decoration: none;
+    color: #527cec;
+}
+
+
+footer ul {
+    text-align: right;
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul#social li {
+    margin-left: 1rem;
+    display: inline-block;
+    /* margin: 0 10px; */
+}
+
+footer ul#social li a {
+    color: #333;
+    font-size: 2rem;
+    text-decoration: none;
+    /* text-align: right; */
+}
+
+footer ul#social li a:hover {
+    text-decoration: none;
+    color: #ec52ec;
+}
+
+footer 
+
+footer p {
+    color: #527cec;
+    text-align: right;
+}
+
+#myid {
+    text-decoration: none;
+    color: #bf0202;
+}
+
