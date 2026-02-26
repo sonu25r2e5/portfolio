@@ -16,11 +16,25 @@ body {
 
 .navbar-brand {
     font-size: 2rem;
-
 }
 
 .nav-link {
     font-size: 1rem;
+}
+
+/* Mobile Navbar Toggle Button */
+.navbar-toggler {
+    border: 2px solid #333;
+    padding: 0.35rem 0.6rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* home */
@@ -75,8 +89,21 @@ body {
     max-width: 100%;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive - Tablet (768px and below) */
 @media (max-width: 768px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.75rem !important;
+    }
+
     #home {
         min-height: calc(100vh - 60px);
         padding: 1rem;
@@ -84,11 +111,13 @@ body {
 
     #name {
         font-size: 2.5rem;
+        margin-bottom: 0.5rem;
     }
 
     #tag-line {
         font-size: 1.5rem;
         margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     #home .container {
@@ -99,29 +128,293 @@ body {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
     }
+
+    /* Resume Section */
+    #resume {
+        padding: 1.5rem 0;
+    }
+
+    #resume .card {
+        margin-bottom: 1.5rem;
+    }
+
+    #resume .card img {
+        height: 120px;
+    }
+
+    .title {
+        font-size: 1.8rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .about {
+        font-size: 0.95rem !important;
+        width: 90% !important;
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+        padding: 1.5rem 0;
+    }
+
+    #portfolio img {
+        margin-top: 15px;
+        height: 180px;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    /* Contact Section */
+    #contact {
+        padding: 3rem 0;
+    }
+
+    #contact form {
+        margin: 0.5rem;
+    }
+
+    #contact form input, 
+    #contact form textarea {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem 0.5rem;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    footer ul#social li {
+        margin: 0.5rem 0.5rem;
+    }
+
+    footer ul#social li a {
+        font-size: 1.5rem;
+    }
+
+    body {
+        padding-top: 56px;
+    }
 }
 
+/* Mobile Responsive - Small Phone (480px and below) */
 @media (max-width: 480px) {
+    html, body {
+        font-size: 13px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.5rem !important;
+    }
+
     #home {
         min-height: calc(100vh - 56px);
+        padding: 0.5rem;
     }
 
     #name {
         font-size: 1.8rem;
+        margin-bottom: 0.5rem;
     }
 
     #tag-line {
         font-size: 1rem;
+        margin: 0.75rem 0;
     }
 
     #home .container {
-        padding: 1rem;
+        padding: 0.75rem;
     }
 
     #learn-more {
         padding: 0.5rem 0.8rem;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         max-width: 100%;
+        border: 1.5px solid #fff;
+    }
+
+    /* Resume Section */
+    #resume {
+        padding: 1rem 0;
+    }
+
+    #resume .card {
+        margin-bottom: 1rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #resume .card img {
+        height: 100px;
+    }
+
+    .title {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.75rem;
+    }
+
+    .about {
+        font-size: 0.85rem !important;
+        width: 95% !important;
+    }
+
+    h5 {
+        font-size: 1rem !important;
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+        padding: 1rem 0;
+    }
+
+    #portfolio .grid {
+        margin-bottom: 1rem;
+    }
+
+    #portfolio img {
+        margin-top: 10px;
+        height: 150px;
+    }
+
+    #portfolio .grid .overlay {
+        top: 10px;
+        margin-top: 10px;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    /* Contact Section */
+    #contact {
+        padding: 2rem 0;
+    }
+
+    #contact form {
+        margin: 0.25rem;
+    }
+
+    #contact form input, 
+    #contact form textarea {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #contact .submit-message {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    footer .back-to-top {
+        margin-bottom: 0.5rem;
+    }
+
+    footer ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer ul#social {
+        text-align: center;
+    }
+
+    footer ul#social li {
+        margin: 0.4rem 0.4rem;
+    }
+
+    footer ul#social li a {
+        font-size: 1.2rem;
+    }
+
+    body {
+        padding-top: 56px;
+    }
+}
+
+/* Extra Small Mobile - Android Phones (max 375px) */
+@media (max-width: 375px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.4rem !important;
+    }
+
+    #name {
+        font-size: 1.5rem;
+    }
+
+    #tag-line {
+        font-size: 0.85rem;
+    }
+
+    #learn-more {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    .title {
+        font-size: 1.2rem !important;
+    }
+
+    .about {
+        font-size: 0.75rem !important;
+    }
+
+    h5 {
+        font-size: 0.9rem !important;
+    }
+
+    #portfolio img {
+        height: 120px;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+
+    #contact form input, 
+    #contact form textarea {
+        font-size: 0.8rem;
+    }
+
+    footer ul#social li a {
+        font-size: 1rem;
     }
 }
 
